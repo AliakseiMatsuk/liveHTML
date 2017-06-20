@@ -1,0 +1,12 @@
+ul.nav-main
+	each val,index in ['Поиск','Перфораторы','Дрели','Шлифмашины','Пистолеты','Электропилы','Наборы инструментов','Аксессуары','Распродажа']
+		if val == 'Поиск'
+			li.nav-main__item.search
+				input(type="search")
+		else if val == 'Распродажа'
+			li.nav-main__item.sale
+				a.nav-main__link(href="#",title='Распродажа') Распродажа
+		else
+			li.nav-main__item
+				a.nav-main__link(href="#", title=val, class={'nav-main__link_active': index == 1})=val
+		

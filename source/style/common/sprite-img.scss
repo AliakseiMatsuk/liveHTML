@@ -1,0 +1,226 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$basket-name: 'basket';
+$basket-x: 0px;
+$basket-y: 24px;
+$basket-offset-x: 0px;
+$basket-offset-y: -24px;
+$basket-width: 19px;
+$basket-height: 17px;
+$basket-total-width: 46px;
+$basket-total-height: 41px;
+$basket-image: '../img/sprite-img.png';
+$basket: (0px, 24px, 0px, -24px, 19px, 17px, 46px, 41px, '../img/sprite-img.png', 'basket', );
+$compare-name: 'compare';
+$compare-x: 24px;
+$compare-y: 0px;
+$compare-offset-x: -24px;
+$compare-offset-y: 0px;
+$compare-width: 22px;
+$compare-height: 16px;
+$compare-total-width: 46px;
+$compare-total-height: 41px;
+$compare-image: '../img/sprite-img.png';
+$compare: (24px, 0px, -24px, 0px, 22px, 16px, 46px, 41px, '../img/sprite-img.png', 'compare', );
+$search-name: 'search';
+$search-x: 0px;
+$search-y: 0px;
+$search-offset-x: 0px;
+$search-offset-y: 0px;
+$search-width: 19px;
+$search-height: 19px;
+$search-total-width: 46px;
+$search-total-height: 41px;
+$search-image: '../img/sprite-img.png';
+$search: (0px, 0px, 0px, 0px, 19px, 19px, 46px, 41px, '../img/sprite-img.png', 'search', );
+$star-name: 'star';
+$star-x: 24px;
+$star-y: 24px;
+$star-offset-x: -24px;
+$star-offset-y: -24px;
+$star-width: 15px;
+$star-height: 14px;
+$star-total-width: 46px;
+$star-total-height: 41px;
+$star-image: '../img/sprite-img.png';
+$star: (24px, 24px, -24px, -24px, 15px, 14px, 46px, 41px, '../img/sprite-img.png', 'star', );
+$basket-2x-name: 'basket@2x';
+$basket-2x-x: 0px;
+$basket-2x-y: 48px;
+$basket-2x-offset-x: 0px;
+$basket-2x-offset-y: -48px;
+$basket-2x-width: 38px;
+$basket-2x-height: 34px;
+$basket-2x-total-width: 92px;
+$basket-2x-total-height: 82px;
+$basket-2x-image: '../img/sprite-img@2x.png';
+$basket-2x: (0px, 48px, 0px, -48px, 38px, 34px, 92px, 82px, '../img/sprite-img@2x.png', 'basket@2x', );
+$compare-2x-name: 'compare@2x';
+$compare-2x-x: 48px;
+$compare-2x-y: 0px;
+$compare-2x-offset-x: -48px;
+$compare-2x-offset-y: 0px;
+$compare-2x-width: 44px;
+$compare-2x-height: 32px;
+$compare-2x-total-width: 92px;
+$compare-2x-total-height: 82px;
+$compare-2x-image: '../img/sprite-img@2x.png';
+$compare-2x: (48px, 0px, -48px, 0px, 44px, 32px, 92px, 82px, '../img/sprite-img@2x.png', 'compare@2x', );
+$search-2x-name: 'search@2x';
+$search-2x-x: 0px;
+$search-2x-y: 0px;
+$search-2x-offset-x: 0px;
+$search-2x-offset-y: 0px;
+$search-2x-width: 38px;
+$search-2x-height: 38px;
+$search-2x-total-width: 92px;
+$search-2x-total-height: 82px;
+$search-2x-image: '../img/sprite-img@2x.png';
+$search-2x: (0px, 0px, 0px, 0px, 38px, 38px, 92px, 82px, '../img/sprite-img@2x.png', 'search@2x', );
+$star-2x-name: 'star@2x';
+$star-2x-x: 48px;
+$star-2x-y: 48px;
+$star-2x-offset-x: -48px;
+$star-2x-offset-y: -48px;
+$star-2x-width: 30px;
+$star-2x-height: 28px;
+$star-2x-total-width: 92px;
+$star-2x-total-height: 82px;
+$star-2x-image: '../img/sprite-img@2x.png';
+$star-2x: (48px, 48px, -48px, -48px, 30px, 28px, 92px, 82px, '../img/sprite-img@2x.png', 'star@2x', );
+$spritesheet-width: 46px;
+$spritesheet-height: 41px;
+$spritesheet-image: '../img/sprite-img.png';
+$spritesheet-sprites: ($basket, $compare, $search, $star, );
+$spritesheet: (46px, 41px, '../img/sprite-img.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 92px;
+$retina-spritesheet-height: 82px;
+$retina-spritesheet-image: '../img/sprite-img@2x.png';
+$retina-spritesheet-sprites: ($basket-2x, $compare-2x, $search-2x, $star-2x, );
+$retina-spritesheet: (92px, 82px, '../img/sprite-img@2x.png', $retina-spritesheet-sprites, );
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+$basket-group-name: 'basket';
+$basket-group: ('basket', $basket, $basket-2x, );
+$compare-group-name: 'compare';
+$compare-group: ('compare', $compare, $compare-2x, );
+$search-group-name: 'search';
+$search-group: ('search', $search, $search-2x, );
+$star-group-name: 'star';
+$star-group: ('star', $star, $star-2x, );
+$retina-groups: ($basket-group, $compare-group, $search-group, $star-group, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

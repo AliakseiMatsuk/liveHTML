@@ -1,0 +1,50 @@
+.page-wrapper
+	header.header
+		.header__head
+			.header__logo
+				img(src="assets/img/logo.png", alt="Магазин инструмента" title="Магазин инструмента")
+			.header__right-block.right-block
+				.right-block__row
+					nav.header__nav
+						ul.nav-header
+							each val, index in ['Каталог инструментов', 'Все для сада', 'Ручной инструмент', 'Электрика' ,'Доставка' ,'Оплата', 'О нас']
+								li.nav-header__item
+									a.nav-header__link(href="#",title=val, class={'nav-header__link_active': index==2})=val 
+					ul.login
+						each val in ['Вход', 'Регистрация']
+							li.login__item
+								a.login__link(href="#")= val 
+				.right-block__row
+					.right-block__banner
+					.right-block__basket
+						ul.basket
+							li.basket__item.bskt
+								a(href="#").basket__link.bskt__link 3 шт. / 17 250 р.
+							li.basket__item.fvrt 
+								a(href="#").basket__link.fvrt__link Избранноe 
+									span.fvrt__count 7
+							li.basket__item.cmpr
+								a(href="#").basket__link.cmpr__link К сравнению 
+									span.cmpr__count 5
+					.right-block__favorite
+						ul.favorite
+							li.favorite__item
+								img(src="assets/img/3.png", alt="Рекомендованные товары" title="Рекомендованные товары")
+							li.favorite__item
+								img(src="assets/img/2.png", alt="Рекомендованные товары" title="Рекомендованные товары")
+							li.favorite__item
+								img(src="assets/img/1.png", alt="Рекомендованные товары" title="Рекомендованные товары")
+					.right-block__contact.contact
+						.contact__work-time.work-time
+							span.work-time__title Время работы:
+							span.work-time__time 10:00 — 19:00
+						.contact__phone
+							a.phone(href="tel:84957212525") 8 495 721-25-25
+						.contact__city.user-city
+							span.user-city__title Москва
+							
+							a.user-city__switch(href="#") сменить
+		.header__bottom
+			div.main-menu
+					nav.main-menu__nav
+						include ../common/_nav-main
